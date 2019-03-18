@@ -1,0 +1,45 @@
+<head>
+	  <title>Brain Activity</title>
+	  <style>
+			body {
+				font-family: "Helvetica Neue", Helvetica, sans-serif;
+				width: 800px;
+				height: auto;
+				margin: 0 auto 50px auto;
+				font-size: 14px;
+				background: #FAF9FA;
+			}
+			svg {
+				width: 100%;
+				height: 600px;
+				font-family: helvetica, sans-serif;
+				overflow: visible;
+			}
+
+			path, line {
+				stroke: rgba(255, 0, 0, 0.486);
+
+			}
+
+			.brainback {
+				background-image:  url('brain.jpg');
+				background: no-repeat center center cover;
+				background-size:	100% auto;
+				background-repeat: no-repeat;	
+				resize: both;
+				overflow: auto;
+			}
+	</style>
+</head>
+<body>
+	<h2 id="activity" style="position: absolute;color: #f45942;"></h2>
+	<div id="chart" class="brainback">
+		<svg>
+		</svg>
+	</div>
+</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://assets.shiftr.io/js/mqtt-2.9.0.js"></script>
+	<script src="http://animateddata.co.uk/lab/d3-tree/js/d3.v3.min.js"></script>
+	<script src="main.js"></script>
+</html>
